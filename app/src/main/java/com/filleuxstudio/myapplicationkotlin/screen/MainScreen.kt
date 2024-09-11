@@ -27,6 +27,8 @@ import com.filleuxstudio.myapplicationkotlin.R
 @Composable
    fun MainScreen(
         onButtonClick: () -> Unit,
+        onButton2Click: () -> Unit,
+        onButton3Click: () -> Unit,
     ) {
         Column (
             modifier = Modifier.fillMaxSize(),
@@ -53,7 +55,20 @@ import com.filleuxstudio.myapplicationkotlin.R
                 onClick = { onButtonClick() }
 
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            Button(
+                content = {
+                    Text("Chuck Norris API")
+                },
+                onClick = { onButton2Click() }
+            )
+            Button(
+                content = {
+                    Text("OpenF1 Formula API")
+                },
+                onClick = { onButton3Click() }
+            )
+
+    Spacer(modifier = Modifier.height(16.dp))
 
             Image(
                 painter = painterResource(id = R.drawable.logo_bmw),

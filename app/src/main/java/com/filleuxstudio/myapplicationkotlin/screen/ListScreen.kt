@@ -21,7 +21,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme/**/
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
@@ -37,15 +37,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
-import coil.decode.GifDecoder
-import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
-import coil.size.Size
-import com.filleuxstudio.myapplicationkotlin.model.BMWEngine
 import com.filleuxstudio.myapplicationkotlin.model.ItemUI
-import com.filleuxstudio.myapplicationkotlin.model.bmwEngines
 import com.filleuxstudio.myapplicationkotlin.viewmodel.BMWEngineViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -69,7 +63,7 @@ fun ListScreen(
         },
         bottomBar = {
             Row(
-                Modifier.padding(0.dp, 8.dp)
+                Modifier.padding(start = 8.dp, end= 8.dp)
             ) {
                 Button(
                     modifier = Modifier.weight(1f),
