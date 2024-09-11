@@ -62,17 +62,6 @@ fun ListScreen(
     }
 }
 
-
-private fun populateMyList(): List<ItemUI.MyAndroidObject> {
-    return bmwEngines.map { engineType ->
-        ItemUI.MyAndroidObject(
-            displacement = engineType.displacement,
-            engineCode = engineType.engineCode,
-            horsepower = engineType.horsepower
-        )
-    }
-}
-
 @Composable
 fun Picture(url:String, modifier: Modifier){
 
@@ -123,6 +112,7 @@ private fun MyScreen(modifier: Modifier) {
             }*/
         val viewModel: BMWEngineViewModel = viewModel()
         val listOfResult = viewModel.BmwEngineList.collectAsState().value
+        //val list = viewModel.getList().collectAsState().value
         LazyColumn(
             modifier = Modifier.padding(8.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -147,7 +137,7 @@ private fun MyScreen(modifier: Modifier) {
                         }
                     }
 
-                    is ItemUI.MyAndroidObject -> {
+                    is ItemUI.Item -> {
                         Text(
                             text = "Code Moteur : ${item.engineCode} | CH : ${item.horsepower} "
                         )

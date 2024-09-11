@@ -6,6 +6,7 @@ import com.filleuxstudio.myapplicationkotlin.data.BMWViewModel
 import com.filleuxstudio.myapplicationkotlin.model.BMWEngine
 import com.filleuxstudio.myapplicationkotlin.model.ItemUI
 import com.filleuxstudio.myapplicationkotlin.model.bmwEngines
+import com.filleuxstudio.myapplicationkotlin.model.toUi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -26,7 +27,7 @@ class BMWEngineViewModel: ViewModel() {
 
     }
 
-    private fun populateMyList(): List<ItemUI> {
+    /*private fun populateMyList(): List<ItemUI> {
         val result = mutableListOf<ItemUI>()
         listOf(
             ItemUI.MyAndroidObject( 3.0,"B58",  382),     // BMW B58 (3.0L, 382ch)
@@ -51,7 +52,7 @@ class BMWEngineViewModel: ViewModel() {
                 result.addAll(it.value) // List of android version number for the given name
             }
         return result
-    }
+    }*/
 
     private fun populateMyListTest(): List<ItemUI> {
         val result = mutableListOf<ItemUI>()
@@ -66,13 +67,14 @@ class BMWEngineViewModel: ViewModel() {
                     )
                 )
 
-                result.addAll(it.value.map { engineType ->
-                    ItemUI.MyAndroidObject(
+               /* result.addAll(it.value.map { engineType ->
+                    ItemUI.Item(
                         displacement = engineType.displacement,
                         engineCode = engineType.engineCode,
                         horsepower = engineType.horsepower
                     )
-                })
+                })*/
+                result.addAll(it.value.toUi())
 
                 result.add(
                     ItemUI.Footer(
