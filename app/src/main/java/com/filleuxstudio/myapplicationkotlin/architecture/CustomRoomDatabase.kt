@@ -2,15 +2,17 @@ package com.filleuxstudio.myapplicationkotlin.architecture
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.filleuxstudio.myapplicationkotlin.data.dao.BMWEngineDao
+import com.filleuxstudio.myapplicationkotlin.data.model.BMWEngineObjectEntity
 
 
 @Database(
     entities = [
-        // TODO add entity later
+        BMWEngineObjectEntity::class
     ],
     version = 1,
     exportSchema = false
 )
 abstract class CustomRoomDatabase : RoomDatabase() {
-    // TODO add later dao
+    abstract fun BMWEngineDao():BMWEngineDao
 }

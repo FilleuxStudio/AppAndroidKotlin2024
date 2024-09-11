@@ -3,14 +3,21 @@ package com.filleuxstudio.myapplicationkotlin.screen
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -27,6 +34,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.ImageLoader
@@ -34,6 +42,7 @@ import coil.compose.rememberAsyncImagePainter
 import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
 import coil.request.ImageRequest
+import coil.size.Size
 import com.filleuxstudio.myapplicationkotlin.model.BMWEngine
 import com.filleuxstudio.myapplicationkotlin.model.ItemUI
 import com.filleuxstudio.myapplicationkotlin.model.bmwEngines
@@ -44,6 +53,9 @@ import com.filleuxstudio.myapplicationkotlin.viewmodel.BMWEngineViewModel
 fun ListScreen(
     navController: NavController,
 ) {
+    val viewModel: BMWEngineViewModel = viewModel()
+    //val listOfResult = viewModel.BmwEngineList.collectAsState().value
+    val listOfResult = viewModel.BMWEnginelist.collectAsState(emptyList()).value
     Scaffold(
         topBar = {
             TopAppBar(
@@ -54,10 +66,47 @@ fun ListScreen(
                     }
                 }
             )
+        },
+        bottomBar = {
+            Row(
+                Modifier.padding(0.dp, 8.dp)
+            ) {
+                Button(
+                    modifier = Modifier.weight(1f),
+                    content = {
+                        Text("Add")
+                    },
+                    onClick = {
+                        viewModel.insertBmwEngine()
+                    } ,
+                    shape = RoundedCornerShape(5.dp),// Border radius,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xff00b159), // Button background color
+                        contentColor = Color.White   // Font color
+                    ),
+                )
+                Spacer(modifier = Modifier.width(16.dp))
+                Button(
+                    modifier = Modifier.weight(1f),
+                    content = {
+                        Text("Delete")
+                    },
+                    onClick = {
+                        viewModel.deleteAllBmwEngine()
+                    },
+                    shape = RoundedCornerShape(5.dp),// Border radius
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xffd11141), // Button background color
+                        contentColor = Color.White   // Font color
+                    ),
+                )
+            }
         }
+
+
     ) { padding ->
         MyScreen(
-            Modifier.padding(padding)
+            Modifier.padding(padding), listOfResult
         )
     }
 }
@@ -85,34 +134,14 @@ fun Picture(url:String, modifier: Modifier){
 }
 
 @Composable
-private fun MyScreen(modifier: Modifier) {
+private fun MyScreen(modifier: Modifier, listOfResult:List<ItemUI>) {
     Surface(
         modifier = modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background,
     ) {
-        /*val listOfResult: MutableList<ItemUI> = mutableListOf()
-        populateMyList() // listOf(MyAndroidObject)
-            .groupBy { myAndroidObject ->
-                myAndroidObject.displacement
-            } // map <String, List<MyAndroidObject>> ex : <Ice Cream Sandwich, listOf("4.0.0","4.0.1","4.0.2","4.0.3")>
-            .forEach { // versionName
-                listOfResult.add(
-                    ItemUI.Header(
-                        year = it.key.toInt(),
-                    )
-                )
-                listOfResult.addAll(
-                    it.value // List of android version number for the given name
-                )
-                listOfResult.add(
-                    ItemUI.Footer(
-                        pub = "https://www.autocollant-tuning.com/1375/bmw-couleur.jpg"
-                    )
-                )
-            }*/
-        val viewModel: BMWEngineViewModel = viewModel()
-        val listOfResult = viewModel.BmwEngineList.collectAsState().value
-        //val list = viewModel.getList().collectAsState().value
+
+
+
         LazyColumn(
             modifier = Modifier.padding(8.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -120,7 +149,8 @@ private fun MyScreen(modifier: Modifier) {
             items(listOfResult) { item ->
                 when (item) {
                     is ItemUI.Header -> OutlinedCard(
-                        modifier = Modifier.fillParentMaxWidth(),
+                        modifier = Modifier.fillParentMaxWidth().height(50.dp),
+                        shape = RoundedCornerShape(5.dp),
                     ) {
                         Column(
                             modifier = Modifier
@@ -130,7 +160,7 @@ private fun MyScreen(modifier: Modifier) {
                         ) {
                             Text(
                                 text = item.year.toString(),
-                                style = MaterialTheme.typography.displayMedium,
+                                fontSize = 35.sp,
                                 color = Color(0xffc52b30)
                             )
 
@@ -154,7 +184,7 @@ private fun MyScreen(modifier: Modifier) {
                                 .build(),
                         )
                         Image(
-                            modifier = Modifier.size(74.dp).padding(8.dp),
+                            modifier = Modifier.size(70.dp).padding(8.dp),
                             painter = painter,
                             contentDescription = null,
                         )
