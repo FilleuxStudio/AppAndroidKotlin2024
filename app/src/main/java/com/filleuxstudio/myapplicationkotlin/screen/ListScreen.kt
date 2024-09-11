@@ -21,11 +21,13 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import coil.ImageLoader
 import coil.compose.rememberAsyncImagePainter
@@ -35,6 +37,7 @@ import coil.request.ImageRequest
 import com.filleuxstudio.myapplicationkotlin.model.BMWEngine
 import com.filleuxstudio.myapplicationkotlin.model.ItemUI
 import com.filleuxstudio.myapplicationkotlin.model.bmwEngines
+import com.filleuxstudio.myapplicationkotlin.viewmodel.BMWEngineViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -98,7 +101,7 @@ private fun MyScreen(modifier: Modifier) {
         modifier = modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background,
     ) {
-        val listOfResult: MutableList<ItemUI> = mutableListOf()
+        /*val listOfResult: MutableList<ItemUI> = mutableListOf()
         populateMyList() // listOf(MyAndroidObject)
             .groupBy { myAndroidObject ->
                 myAndroidObject.displacement
@@ -117,8 +120,9 @@ private fun MyScreen(modifier: Modifier) {
                         pub = "https://www.autocollant-tuning.com/1375/bmw-couleur.jpg"
                     )
                 )
-            }
-
+            }*/
+        val viewModel: BMWEngineViewModel = viewModel()
+        val listOfResult = viewModel.BmwEngineList.collectAsState().value
         LazyColumn(
             modifier = Modifier.padding(8.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -137,7 +141,7 @@ private fun MyScreen(modifier: Modifier) {
                             Text(
                                 text = item.year.toString(),
                                 style = MaterialTheme.typography.displayMedium,
-                                color = Color(0xff33a0d1)
+                                color = Color(0xffc52b30)
                             )
 
                         }
@@ -145,10 +149,7 @@ private fun MyScreen(modifier: Modifier) {
 
                     is ItemUI.MyAndroidObject -> {
                         Text(
-                            text = "Code Moteur : ${item.engineCode}"
-                        )
-                        Text(
-                            text = "CH : ${item.horsepower}"
+                            text = "Code Moteur : ${item.engineCode} | CH : ${item.horsepower} "
                         )
                         Text(
                             text = "Cylindrée : ${item.displacement}"
