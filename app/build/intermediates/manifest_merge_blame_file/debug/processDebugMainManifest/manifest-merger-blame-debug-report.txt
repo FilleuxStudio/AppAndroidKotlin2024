@@ -11,152 +11,337 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:5:5-66
 11-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:5:22-64
-12
-13    <permission
-13-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\121b5af60ea1ef756e0fd6b9281015eb\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-14        android:name="com.filleuxstudio.myapplicationkotlin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\121b5af60ea1ef756e0fd6b9281015eb\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\121b5af60ea1ef756e0fd6b9281015eb\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:6:5-77
+12-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:22:5-79
+13-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:22:22-76
+14    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+14-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:24:5-68
+14-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:24:22-65
+15    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+15-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:26:5-82
+15-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:26:22-79
 16
-17    <uses-permission android:name="com.filleuxstudio.myapplicationkotlin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\121b5af60ea1ef756e0fd6b9281015eb\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\121b5af60ea1ef756e0fd6b9281015eb\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-18
-19    <application
-19-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:7:5-29:19
-20        android:name="com.filleuxstudio.myapplicationkotlin.architecture.CustomApplication"
-20-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:8:9-55
-21        android:allowBackup="true"
-21-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:9:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\121b5af60ea1ef756e0fd6b9281015eb\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:10:9-65
-24        android:debuggable="true"
-25        android:extractNativeLibs="false"
-26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:11:9-54
-27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:12:9-43
-28        android:label="@string/app_name"
-28-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:13:9-41
-29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:14:9-54
-30        android:supportsRtl="true"
-30-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:15:9-35
-31        android:testOnly="true"
-32        android:theme="@style/Theme.MyApplicationKotlin" >
-32-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:16:9-57
-33        <activity
-33-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:18:9-28:20
-34            android:name="com.filleuxstudio.myapplicationkotlin.MainActivity"
-34-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:19:13-41
-35            android:exported="true"
-35-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:20:13-36
-36            android:label="@string/app_name"
-36-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:21:13-45
-37            android:theme="@style/Theme.MyApplicationKotlin" >
-37-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:22:13-61
-38            <intent-filter>
-38-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:23:13-27:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:24:17-69
-39-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:24:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:26:17-77
-41-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:26:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity
-44-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ac91ad75de061c4f93b1ca328ec6db32\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-45            android:name="androidx.compose.ui.tooling.PreviewActivity"
-45-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ac91ad75de061c4f93b1ca328ec6db32\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-46            android:exported="true" />
-46-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ac91ad75de061c4f93b1ca328ec6db32\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-47
-48        <provider
-48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-49            android:name="androidx.startup.InitializationProvider"
-49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-50            android:authorities="com.filleuxstudio.myapplicationkotlin.androidx-startup"
-50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+17    <permission
+17-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\065a2af6f8a2aa1db6428b9862d49fb7\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+18        android:name="com.filleuxstudio.myapplicationkotlin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\065a2af6f8a2aa1db6428b9862d49fb7\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\065a2af6f8a2aa1db6428b9862d49fb7\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.filleuxstudio.myapplicationkotlin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\065a2af6f8a2aa1db6428b9862d49fb7\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\065a2af6f8a2aa1db6428b9862d49fb7\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:9:5-39:19
+24        android:name="com.filleuxstudio.myapplicationkotlin.architecture.CustomApplication"
+24-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:10:9-55
+25        android:allowBackup="true"
+25-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:11:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.13.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\065a2af6f8a2aa1db6428b9862d49fb7\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+27        android:dataExtractionRules="@xml/data_extraction_rules"
+27-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:12:9-65
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:fullBackupContent="@xml/backup_rules"
+30-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:13:9-54
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:14:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:15:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:16:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:17:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.MyApplicationKotlin" >
+36-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:18:9-57
+37        <activity
+37-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:20:9-30:20
+38            android:name="com.filleuxstudio.myapplicationkotlin.MainActivity"
+38-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:21:13-41
+39            android:exported="true"
+39-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:22:13-36
+40            android:label="@string/app_name"
+40-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:23:13-45
+41            android:theme="@style/Theme.MyApplicationKotlin" >
+41-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:24:13-61
+42            <intent-filter>
+42-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:25:13-29:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:26:17-69
+43-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:26:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:28:17-77
+45-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:28:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <service
+49-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:31:9-37:19
+50            android:name="com.filleuxstudio.myapplicationkotlin.data.MyFirebaseMessagingService"
+50-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:32:13-60
 51            android:exported="false" >
-51-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-52            <meta-data
-52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-54                android:value="androidx.startup" />
-54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\b9c3bcb3078fbe814459ee75663b0e1d\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-55            <meta-data
-55-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\7f93e497b32eeff55d7eed89469de7ea\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
-56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-56-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\7f93e497b32eeff55d7eed89469de7ea\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
-57                android:value="androidx.startup" />
-57-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\7f93e497b32eeff55d7eed89469de7ea\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
-58            <meta-data
-58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-59                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-60                android:value="androidx.startup" />
-60-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-61        </provider>
-62
-63        <activity
-63-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\78c33e273a4e64418b6a36716b034f73\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
-64            android:name="androidx.activity.ComponentActivity"
-64-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\78c33e273a4e64418b6a36716b034f73\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
-65            android:exported="true" />
-65-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\78c33e273a4e64418b6a36716b034f73\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
-66
-67        <service
-67-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\cdf29c5e970e7ec6914cd7b7b3c43063\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
-68            android:name="androidx.room.MultiInstanceInvalidationService"
-68-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\cdf29c5e970e7ec6914cd7b7b3c43063\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
-69            android:directBootAware="true"
-69-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\cdf29c5e970e7ec6914cd7b7b3c43063\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
-70            android:exported="false" />
-70-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\cdf29c5e970e7ec6914cd7b7b3c43063\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
-71
-72        <receiver
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-74            android:directBootAware="false"
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-75            android:enabled="true"
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-76            android:exported="true"
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-77            android:permission="android.permission.DUMP" >
-77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-80            </intent-filter>
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\03e661c5f5cff5b952280b6f5ad491e1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-89            </intent-filter>
-90        </receiver>
-91    </application>
-92
-93</manifest>
+51-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:33:13-37
+52            <intent-filter>
+52-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:34:13-36:29
+53                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+53-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:35:17-78
+53-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:35:25-75
+54            </intent-filter>
+55        </service>
+56        <service
+56-->[com.google.firebase:firebase-messaging-ktx:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0c23faf8181562519c3c9568c0c01b5e\transformed\firebase-messaging-ktx-24.0.2\AndroidManifest.xml:23:9-29:19
+57            android:name="com.google.firebase.components.ComponentDiscoveryService"
+57-->[com.google.firebase:firebase-messaging-ktx:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0c23faf8181562519c3c9568c0c01b5e\transformed\firebase-messaging-ktx-24.0.2\AndroidManifest.xml:24:13-84
+58            android:directBootAware="true"
+58-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+59            android:exported="false" >
+59-->[com.google.firebase:firebase-messaging-ktx:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0c23faf8181562519c3c9568c0c01b5e\transformed\firebase-messaging-ktx-24.0.2\AndroidManifest.xml:25:13-37
+60            <meta-data
+60-->[com.google.firebase:firebase-messaging-ktx:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0c23faf8181562519c3c9568c0c01b5e\transformed\firebase-messaging-ktx-24.0.2\AndroidManifest.xml:26:13-28:85
+61                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+61-->[com.google.firebase:firebase-messaging-ktx:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0c23faf8181562519c3c9568c0c01b5e\transformed\firebase-messaging-ktx-24.0.2\AndroidManifest.xml:27:17-129
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.firebase:firebase-messaging-ktx:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0c23faf8181562519c3c9568c0c01b5e\transformed\firebase-messaging-ktx-24.0.2\AndroidManifest.xml:28:17-82
+63            <meta-data
+63-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:57:13-59:85
+64                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+64-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:58:17-122
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:59:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:60:13-62:85
+67                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+67-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:61:17-119
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:62:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\3ef3a5fa3aea8d6028b9cca14fa5d909\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+70                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+70-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\3ef3a5fa3aea8d6028b9cca14fa5d909\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\3ef3a5fa3aea8d6028b9cca14fa5d909\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\3ef3a5fa3aea8d6028b9cca14fa5d909\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+73                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+73-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\3ef3a5fa3aea8d6028b9cca14fa5d909\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\3ef3a5fa3aea8d6028b9cca14fa5d909\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\84a2572f855568485cdabd61642b74bf\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+76                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+76-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\84a2572f855568485cdabd61642b74bf\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\84a2572f855568485cdabd61642b74bf\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+79                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+79-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0009bb7bbba32c61c233d4854a49bf93\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+82                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+82-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0009bb7bbba32c61c233d4854a49bf93\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0009bb7bbba32c61c233d4854a49bf93\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+84        </service>
+85
+86        <activity
+86-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\9d3a8faa26c27ef868aa609176508ea7\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+87            android:name="androidx.compose.ui.tooling.PreviewActivity"
+87-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\9d3a8faa26c27ef868aa609176508ea7\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+88            android:exported="true" />
+88-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\9d3a8faa26c27ef868aa609176508ea7\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+89
+90        <receiver
+90-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:29:9-40:20
+91            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+91-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:30:13-78
+92            android:exported="true"
+92-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:31:13-36
+93            android:permission="com.google.android.c2dm.permission.SEND" >
+93-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:32:13-73
+94            <intent-filter>
+94-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:33:13-35:29
+95                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+95-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:34:17-81
+95-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:34:25-78
+96            </intent-filter>
+97
+98            <meta-data
+98-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:37:13-39:40
+99                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+99-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:38:17-92
+100                android:value="true" />
+100-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:39:17-37
+101        </receiver>
+102        <!--
+103             FirebaseMessagingService performs security checks at runtime,
+104             but set to not exported to explicitly avoid allowing another app to call it.
+105        -->
+106        <service
+106-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:46:9-53:19
+107            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+107-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:47:13-82
+108            android:directBootAware="true"
+108-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:48:13-43
+109            android:exported="false" >
+109-->[com.google.firebase:firebase-messaging:24.0.2] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\459fd84d1ebf1c557e6132a2e8168ce1\transformed\firebase-messaging-24.0.2\AndroidManifest.xml:49:13-37
+110            <intent-filter android:priority="-500" >
+110-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:34:13-36:29
+111                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+111-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:35:17-78
+111-->C:\Users\Dimitri\AndroidStudioProjects\MyApplicationKotlin\app\src\main\AndroidManifest.xml:35:25-75
+112            </intent-filter>
+113        </service>
+114
+115        <activity
+115-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\298c552bf355b082d00924207292b788\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+116            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+116-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\298c552bf355b082d00924207292b788\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\298c552bf355b082d00924207292b788\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+118            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+118-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\298c552bf355b082d00924207292b788\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+119
+120        <provider
+120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+121            android:name="com.google.firebase.provider.FirebaseInitProvider"
+121-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+122            android:authorities="com.filleuxstudio.myapplicationkotlin.firebaseinitprovider"
+122-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+123            android:directBootAware="true"
+123-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+124            android:exported="false"
+124-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+125            android:initOrder="100" />
+125-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\45738bf09bfe25ee8c1603ca2a55d429\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+126
+127        <service
+127-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\83de9d7daa93da507833e3d8de6fb23a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+128            android:name="androidx.room.MultiInstanceInvalidationService"
+128-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\83de9d7daa93da507833e3d8de6fb23a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+129            android:directBootAware="true"
+129-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\83de9d7daa93da507833e3d8de6fb23a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+130            android:exported="false" />
+130-->[androidx.room:room-runtime:2.6.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\83de9d7daa93da507833e3d8de6fb23a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+131
+132        <provider
+132-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+133            android:name="androidx.startup.InitializationProvider"
+133-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+134            android:authorities="com.filleuxstudio.myapplicationkotlin.androidx-startup"
+134-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+135            android:exported="false" >
+135-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+136            <meta-data
+136-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+137                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+137-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+138                android:value="androidx.startup" />
+138-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c1dad3ee717088406e61be4b933778f0\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+139            <meta-data
+139-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0868f64fa13e5e2c7b4fd1c127d53342\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+140                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+140-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0868f64fa13e5e2c7b4fd1c127d53342\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+141                android:value="androidx.startup" />
+141-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\0868f64fa13e5e2c7b4fd1c127d53342\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+142            <meta-data
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+143                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+144                android:value="androidx.startup" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+145        </provider>
+146
+147        <meta-data
+147-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c9769edfb8d8e6e87c1579bdacf112d1\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+148            android:name="com.google.android.gms.version"
+148-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c9769edfb8d8e6e87c1579bdacf112d1\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+149            android:value="@integer/google_play_services_version" />
+149-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\c9769edfb8d8e6e87c1579bdacf112d1\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+150
+151        <activity
+151-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\7e544fed78deb8bd0a2b06675ae54e3a\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+152            android:name="androidx.activity.ComponentActivity"
+152-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\7e544fed78deb8bd0a2b06675ae54e3a\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+153            android:exported="true" />
+153-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\7e544fed78deb8bd0a2b06675ae54e3a\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+154
+155        <receiver
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+156            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+157            android:directBootAware="false"
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+158            android:enabled="true"
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+159            android:exported="true"
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+160            android:permission="android.permission.DUMP" >
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+161            <intent-filter>
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+162                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+163            </intent-filter>
+164            <intent-filter>
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+165                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+166            </intent-filter>
+167            <intent-filter>
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+168                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+169            </intent-filter>
+170            <intent-filter>
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+171                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\6c2f0b640fe02944c24bbacf6f740f90\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+172            </intent-filter>
+173        </receiver>
+174
+175        <service
+175-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ddf147f0d3fdfa0b09486aa2a3ff2ddc\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+176            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+176-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ddf147f0d3fdfa0b09486aa2a3ff2ddc\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+177            android:exported="false" >
+177-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ddf147f0d3fdfa0b09486aa2a3ff2ddc\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+178            <meta-data
+178-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ddf147f0d3fdfa0b09486aa2a3ff2ddc\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+179                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+179-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ddf147f0d3fdfa0b09486aa2a3ff2ddc\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+180                android:value="cct" />
+180-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\ddf147f0d3fdfa0b09486aa2a3ff2ddc\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+181        </service>
+182        <service
+182-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+183            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+183-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+184            android:exported="false"
+184-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+185            android:permission="android.permission.BIND_JOB_SERVICE" >
+185-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+186        </service>
+187
+188        <receiver
+188-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+189            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+189-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+190            android:exported="false" />
+190-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Dimitri\Documents\Master Cours\Développement Android\Project\Android-projetCCM1-GeoChat\caches\transforms-4\fc6248ad20b30c1972abf6763b71c31f\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+191    </application>
+192
+193</manifest>

@@ -8,5 +8,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">MyApplicationKotlin</string>
+    <string name="gcm_defaultSenderId" translatable="false">840305308122</string>
+    <string name="google_api_key" translatable="false">AIzaSyBWI4flF9HCHA9-BuJQOBNr_YI9tfvL3QU</string>
+    <string name="google_app_id" translatable="false">1:840305308122:android:0c1dce77609ec2a0ef90e3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBWI4flF9HCHA9-BuJQOBNr_YI9tfvL3QU</string>
+    <string name="google_storage_bucket" translatable="false">androidcloud-50f5f.appspot.com</string>
+    <string name="project_id" translatable="false">androidcloud-50f5f</string>
     <style name="Theme.MyApplicationKotlin" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

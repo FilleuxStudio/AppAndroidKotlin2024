@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "840305308122",
+    "project_id": "androidcloud-50f5f",
+    "storage_bucket": "androidcloud-50f5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840305308122:android:0c1dce77609ec2a0ef90e3",
+        "android_client_info": {
+          "package_name": "com.filleuxstudio.myapplicationkotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWI4flF9HCHA9-BuJQOBNr_YI9tfvL3QU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
